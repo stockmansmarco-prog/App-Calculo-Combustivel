@@ -21,7 +21,12 @@ st.markdown("""
         background: linear-gradient(180deg, #071526 0%, #0b1f35 100%);
     }
     [data-testid="stHeader"] {background: transparent;}
-    #MainMenu, footer {visibility: hidden;}
+    #MainMenu, footer,
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"] {
+    display: none !important;
+}
 
     .block-container {
         max-width: 760px;
