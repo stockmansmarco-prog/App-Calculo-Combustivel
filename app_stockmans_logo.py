@@ -230,6 +230,7 @@ if calcular:
         econ_diesel_ano = econ_diesel_h * horas_ano
         econ_glp_ano = econ_glp_h * horas_ano
         
+        st.markdown("<hr>", unsafe_allow_html=True)
         st.markdown('<div id="resultado-economia"></div>', unsafe_allow_html=True)
 
 st.components.v1.html(
@@ -248,7 +249,6 @@ st.components.v1.html(
     """,
     height=0
 )
-        st.markdown("<hr>", unsafe_allow_html=True)
         st.markdown('<div class="section-title">Custo de energia por hora</div>', unsafe_allow_html=True)
 
         a, b, c = st.columns(3)
