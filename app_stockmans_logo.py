@@ -229,6 +229,7 @@ if calcular:
         econ_glp_mes = econ_glp_h * horas_mes
         econ_diesel_ano = econ_diesel_h * horas_ano
         econ_glp_ano = econ_glp_h * horas_ano
+        
         st.markdown('<div id="resultado-economia"></div>', unsafe_allow_html=True)
 
 st.components.v1.html(
