@@ -229,7 +229,24 @@ if calcular:
         econ_glp_mes = econ_glp_h * horas_mes
         econ_diesel_ano = econ_diesel_h * horas_ano
         econ_glp_ano = econ_glp_h * horas_ano
+        st.markdown('<div id="resultado-economia"></div>', unsafe_allow_html=True)
 
+st.components.v1.html(
+    """
+    <script>
+        setTimeout(function() {
+            const alvo = window.parent.document.getElementById("resultado-economia");
+            if (alvo) {
+                alvo.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        }, 400);
+    </script>
+    """,
+    height=0
+)
         st.markdown("<hr>", unsafe_allow_html=True)
         st.markdown('<div class="section-title">Custo de energia por hora</div>', unsafe_allow_html=True)
 
