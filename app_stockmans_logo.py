@@ -5,10 +5,10 @@ from pathlib import Path
 
 st.set_page_config(page_title="Calculadora de Economia | Stockmans", page_icon="⚡", layout="centered", initial_sidebar_state="collapsed")
 
-CONSUMO_DIESEL = 3.7
-CONSUMO_GLP = 2.2
+CONSUMO_DIESEL = 3.5
+CONSUMO_GLP = 2.0
 PESO_P20 = 20.0
-CONSUMO_ELETRICA = 3.8
+CONSUMO_ELETRICA = 3.6
 
 st.markdown("""
 <style>
