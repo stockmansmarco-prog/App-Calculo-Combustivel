@@ -103,7 +103,7 @@ if calcular:
         st.markdown('<div class="section-title">Economia estimada com a L30XE elétrica</div>',unsafe_allow_html=True)
         st.markdown(f'<div class="saving-card"><div class="saving-label">L30XE × GTS30D DIESEL</div><div class="saving-value">{brl(econ_diesel_mes)} / mês</div><div class="saving-detail">{brl(econ_diesel_h)}/h • {brl(econ_diesel_ano)}/ano</div></div>',unsafe_allow_html=True)
         st.markdown(f'<div class="saving-card"><div class="saving-label">L30XE × GTS30L GLP</div><div class="saving-value">{brl(econ_glp_mes)} / mês</div><div class="saving-detail">{brl(econ_glp_h)}/h • {brl(econ_glp_ano)}/ano</div></div>',unsafe_allow_html=True)
-        st.caption(f"Simulação considerando {horas_dia:g} h/dia, {dias_mes} dias/mês ({horas_mes:g} h/mês). Valores estimados exclusivamente a partir dos consumos médios informados na planilha-base.")
+        st.caption(f"Simulação considerando {horas_dia:g} h/dia, {dias_mes} dias/mês ({horas_mes:g} h/mês). Valores estimados exclusivamente a partir dos consumos médios informados no catalogo do fabricante.")
 
         components.html("""
         <script>
